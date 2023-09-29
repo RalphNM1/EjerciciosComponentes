@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EjerciciosComponentes</string>
+    <string name="correo_hint">Correo electrónico</string>
+    <string name="NTelefono_hint">Número de teléfono</string>
+    <string name="Edad_hint">Edad</string>
+    <string name="FechaNac_hint">Fecha de Nacimiento</string>
+    <string name="Contrasena_hint">Contraseña</string>
+    <string name="Nombre_hint">Nombre</string>
+    <string name="Apellidos_hint">Apellidos</string>
+    <string name="Direccion_hint">Dirección</string>
+
+
+</resources>

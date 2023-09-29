@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/InNombre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/Nombre_hint"
+        android:inputType="text"
+        android:autofillHints="name" />
+
+
+    <EditText
+        android:id="@+id/InApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/Apellidos_hint"
+        android:inputType="text"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/InDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/Direccion_hint"
+        android:inputType="textPostalAddress"
+        android:autofillHints="postalAddress" />
+
+    <EditText
+        android:id="@+id/InCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/correo_hint"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/InNTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/NTelefono_hint"
+        android:inputType="phone"
+        android:autofillHints="phone" />
+
+    <EditText
+        android:id="@+id/InEdad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/Edad_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/InFechaNac"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/FechaNac_hint"
+        android:inputType="date"
+         />
+
+    <EditText
+        android:id="@+id/InContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/Contrasena_hint"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        />
+    <CheckBox
+        android:id="@+id/cb_lectura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lectura"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_deportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deportes"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_videojuegos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videojuegos"
+        />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Hombre"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Mujer"
+            />
+        />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btBotonEnviarFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Enviar Formulario"
+
+        />
+
+    <TextView
+        android:id="@+id/tvErrores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+
+
+
+
+</LinearLayout>
