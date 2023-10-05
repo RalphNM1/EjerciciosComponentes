@@ -10,4 +10,16 @@
     <string name="Direccion_hint">Dirección</string>
 
 
+    <string-array name="From">
+        <item>Seleccione un campo</item>
+        <item>Las Vegas, NV (LAS)</item>
+        <item>Phoenix, AZ (PHX)</item>
+    </string-array>
+
+    <string-array name="To">
+        <item>Seleccione un campo</item>
+        <item>Las Vegas, NV (LAS)</item>
+        <item>Phoenix, AZ (PHX)</item>
+    </string-array>
+
 </resources>

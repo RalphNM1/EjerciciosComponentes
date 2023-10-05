@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -13,19 +12,19 @@
 
 
     <TableRow>
+
         <EditText
             android:id="@+id/EtFilas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
 
-            android:hint="Filas"
-            />
+            android:hint="Filas" />
+
         <EditText
             android:id="@+id/EtColumnas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:hint="Columnas"
-            />
+            android:hint="Columnas" />
 
     </TableRow>
 
@@ -37,40 +36,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_span="2"
-            android:text="Xerar Táboa"
             android:backgroundTint="#AFAFAF"
+            android:text="Xerar Táboa"
 
             />
 
 
     </TableRow>
 
-    <TableLayout
-        android:id="@+id/GlTabla"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
+    <ScrollView>
 
-        >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-
-            <!--<ImageButton
-                android:id="@+id/IbImagen"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_launcher_foreground"
-                />
-            -->
+            <TableLayout
+                android:id="@+id/GlTabla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
 
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
 
-
-
-
-
-
-
-    </TableLayout>
-
-
-  </TableLayout>
+</TableLayout>

@@ -30,11 +30,11 @@ public class Ejercicio3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-
+                TlTabla.removeAllViews();
                 try {
                     int NFilas = Integer.parseInt(etFilas.getText().toString());
                     int NColumnas = Integer.parseInt(etColumnas.getText().toString());
+
 
 
                     for (int i = 0; i < NFilas; i++) {
@@ -42,11 +42,13 @@ public class Ejercicio3 extends AppCompatActivity {
 
                         for (int j = 0; j <NColumnas ; j++) {
                             ImageView imagen = new ImageView(view.getContext());
-                            imagen.setImageResource();
+                            imagen.setImageResource(R.drawable.android);
 
 
+                            TFila.addView(imagen);
 
                         }
+                        TlTabla.addView(TFila);
 
                     }
 

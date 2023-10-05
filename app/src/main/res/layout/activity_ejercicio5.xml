@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="*"
+    tools:context=".Ejercicio5"
+
+
+    >
+
+    <TextView
+        android:id="@+id/tvBookFlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0032C6"
+        android:fontFamily="sans-serif-medium"
+        android:text="Book Flight"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <TableRow>
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_span="5"
+            android:orientation="horizontal"
+
+
+            >
+
+            <RadioButton
+                android:id="@+id/btRoundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="RoundTrip"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioButton
+                android:id="@+id/btOneWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="One way"
+                android:textColor="#474747"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/btHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="#474747"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow android:layout_marginLeft="1dp">
+
+        <TextView
+            android:id="@+id/TvFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="From"
+            android:textColor="#6CB3FF"
+            android:textSize="20sp" />
+        />
+    </TableRow>
+
+    <TableRow android:layout_marginLeft="1dp">
+
+
+        <Spinner
+
+            android:id="@+id/spin_From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="5"
+            android:entries="@array/From"
+            android:padding="7dp"
+
+            >
+
+
+        </Spinner>
+
+
+    </TableRow>
+
+    <TableRow android:layout_marginLeft="1dp">
+
+        <TextView
+            android:id="@+id/TvTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="To"
+            android:textColor="#6CB3FF"
+            android:textSize="20sp" />
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="15dp">
+
+        <Spinner
+            android:id="@+id/spin_To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="5"
+            android:entries="@array/From"
+            android:padding="7dp"
+
+            >
+
+
+        </Spinner>
+
+
+    </TableRow>
+
+
+    <TableRow android:layout_marginLeft="1dp">
+
+        <TextView
+            android:id="@+id/TvDepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Depart"
+            android:textColor="#6CB3FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TvReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Return"
+            android:textColor="#6CB3FF"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/TvPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:fontFamily="sans-serif-medium"
+            android:text="Passengers"
+            android:textColor="#6CB3FF"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/etDepart"
+            android:hint="Depart"
+            android:inputType="date"
+            android:imeOptions="actionNext"
+
+            />
+
+        <EditText
+            android:id="@+id/etReturn"
+            android:hint="Return"
+            android:inputType="date"
+            android:imeOptions="actionNext"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/ibtmenos"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFF"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:src="@drawable/menos" />
+
+        <EditText
+            android:id="@+id/etPassegers"
+            android:inputType="number"
+            android:text="0"
+            android:keyboardNavigationCluster="false"
+            android:focusable="false"
+            android:imeOptions="actionNone"
+
+            />
+
+        <ImageButton
+            android:id="@+id/ibtmas"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFF"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:src="@drawable/mas" />
+
+
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/TvMaximun"
+        android:fontFamily="sans-serif-medium"
+        android:text="Maximun number of stops"
+        android:textColor="#6CB3FF"
+        android:textSize="20sp" />
+
+    <TableRow>
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup2"
+            android:layout_span="5"
+            android:orientation="horizontal"
+
+
+            >
+
+            <RadioButton
+                android:id="@+id/btNonStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="NonStop"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioButton
+                android:id="@+id/btOneStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="One Stop"
+                android:textColor="#474747"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/bt2ormore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="2 or more"
+                android:textColor="#474747"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+        </RadioGroup>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btSearchFlights"
+        android:backgroundTint="#C60000"
+        android:fontFamily="sans-serif"
+        android:text="Search Flights"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</TableLayout>
